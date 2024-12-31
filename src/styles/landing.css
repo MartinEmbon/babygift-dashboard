@@ -1,0 +1,241 @@
+/* Global Styles */
+.landing-page {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a8d3f7; /* Soft Baby Blue */
+  }
+  
+  .navbar-left h1 {
+    font-size: 1.8rem;
+    color: #fff;
+  }
+  
+  .navbar-right .cta-button {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #ffb3d9; /* Soft Pink */
+    margin-left: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-right .cta-button:hover {
+    background-color: #ff80bf; /* Slightly Darker Pink */
+  }
+  
+  .hero-section {
+    background-image: url('https://via.placeholder.com/1500x800'); /* Add a real hero image here */
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+  }
+  
+  .hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  .hero-content h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+  
+  .cta-buttons {
+    margin-top: 20px;
+  }
+  
+  .cta-button.large-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px;
+    background-color: #ffb3d9; /* Soft Pink */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button.large-button:hover {
+    background-color: #ff80bf; /* Slightly Darker Pink */
+  }
+  
+  .product-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f0f9ff; /* Light Baby Blue */
+    margin-top: 20px;
+  }
+  
+  .info-left, .info-right {
+    width: 45%;
+  }
+  
+  .info-left h2, .info-right h2 {
+    color: #4CAF50; /* Soft Green */
+  }
+  
+  .info-left p {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .info-right ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .info-right li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .main-content {
+    padding: 20px;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f7f7f7;
+    margin-top: 20px;
+  }
+  
+  .features-text {
+    width: 45%;
+  }
+  
+  .features-image {
+    width: 45%;
+  }
+  
+  .features-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .features h2 {
+    font-size: 1.5rem;
+    color: #4CAF50; /* Soft Green */
+  }
+  
+  .features ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .features li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .mock-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .image-container {
+    margin: 15px 0;
+    max-width: 300px;
+    width: 100%;
+  }
+  
+  .mock-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-container p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 0.8rem;
+    color: #888;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-left h1 {
+      font-size: 1.5rem;
+    }
+  
+    .navbar-right .cta-button {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  
+    .hero-content h2 {
+      font-size: 1.8rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .cta-button.large-button {
+      font-size: 1rem;
+      padding: 12px 25px;
+    }
+  
+    .product-info {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .info-left, .info-right {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .features-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .features-text, .features-image {
+      width: 100%;
+      text-align: center;
+    }
+  }

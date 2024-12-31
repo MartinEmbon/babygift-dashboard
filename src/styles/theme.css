@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background-color: #fdf7f2; /* Light beige background */
+    color: #333; /* Dark gray font color */
+  }
+  
+  h1, h2, h3 {
+    color: #5c80bc; /* Soft blue for headings */
+  }
+  
+  /* Dashboard Styles */
+  .dashboard {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .dashboard h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #ff8ba7; /* Pastel pink for welcome message */
+  }
+  
+  .dashboard button {
+    background-color: #5c80bc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .dashboard button:hover {
+    background-color: #4a6fa1;
+  }
+  
+  /* Wishlist Styles */
+  .wishlist {
+    margin: 20px 0;
+  }
+  
+  .wishlist h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff8ba7;
+  }
+  
+  .wishlist ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .wishlist li {
+    background: #f6f9fc; /* Light blue-gray for list items */
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .wishlist li button {
+    background-color: #ff8ba7;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  .wishlist li button:hover {
+    background-color: #e0708b;
+  }
+  
+  /* ContributorPage Styles */
+  .contributor-page {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .contributor-page h1 {
+    font-size: 2rem;
+    color: #5c80bc;
+    text-align: center;
+  }
+  
+  .contributor-page ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contributor-page li {
+    background: #ffebd9; /* Soft orange for contributor list items */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contributor-page li button {
+    background-color: #6fcf97; /* Soft green for checkout */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contributor-page li button:hover {
+    background-color: #56b983;
+  }
+  
+  /* Form Styles */
+  form {
+    background-color: #fdf7f2;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5c80bc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #4a6fa1;
+  }
+  

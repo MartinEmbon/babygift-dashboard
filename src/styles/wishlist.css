@@ -1,0 +1,217 @@
+/* Wishlist container */
+.wishlist-container {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fc;
+  padding: 20px;
+}
+
+/* Wishlist columns layout */
+.wishlist-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px; /* Space between columns */
+}
+
+.wishlist-column {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wishlist-column h3 {
+  font-size: 1.4rem;
+  color: #ff8ba7;
+  margin-bottom: 15px;
+}
+
+.wishlist-column ul {
+  list-style: none; /* Removes default bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.wishlist-column li {
+  display: flex;
+  align-items: center;
+  background: #f6f9fc;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.wishlist-column li img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.wishlist-column li div {
+  flex-grow: 1;
+}
+
+.wishlist-column li p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.wishlist-column li button {
+  background-color: #ff8ba7;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.wishlist-column li button:hover {
+  background-color: #ff6782;
+}
+
+/* Button to add new product */
+.add-product-btn {
+  background-color: #ff8ba7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.add-product-btn:hover {
+  background-color: #ff6782;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .wishlist-columns {
+    grid-template-columns: 1fr; /* Single column on mobile */
+  }
+
+  .wishlist-column h3 {
+    font-size: 1.2rem;
+  }
+
+  .wishlist-column li {
+    font-size: 1rem;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .wishlist-column li img {
+    width: 80px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .add-product-btn {
+    width: 100%; /* Full width on mobile */
+  }
+}
+/* Modal Overlay */
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears above the other content */
+}
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above the other content */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 650px; /* Set a max-width to prevent the modal from becoming too wide */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-sizing: border-box; /* Ensure padding is included in the width/height calculation */
+    position: relative; /* Allow positioning the X button relative to this container */
+  }
+  
+  /* Close Button (X) */
+  .modal-close-btn {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    position: absolute; /* Position relative to the modal content */
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1100; /* Ensure it's above any other modal content */
+  }
+  
+  .modal-close-btn:hover {
+    color: red;
+  }
+  
+  /* Responsive Inputs and Buttons */
+  .product-form input,
+  .product-form button {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%; /* Make inputs and buttons take up the full width of the modal */
+    box-sizing: border-box; /* Ensure padding and border are included in the width calculation */
+  }
+  
+  .product-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .product-form button:hover {
+    background-color: #0056b3;
+  }
+  /* Add this to your wishlist.css */
+.wishlist-column button {
+    margin-right: 5px;
+  }
+  
+  .wishlist-column button:last-child {
+    /* background-color: #dc3545;  */
+    color: white;
+    margin-left: 5px; /* Adds margin to the left of the Remove button */
+  }
+  
+  .wishlist-column button:last-child:hover {
+    /* background-color: #c82333;  */
+  }
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

@@ -1,0 +1,32 @@
+.money-raised {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .money-raised h2 {
+    font-size: 1.8rem;
+    color: #ff8ba7;
+    margin-bottom: 10px;
+  }
+  
+  .money-raised .total {
+    font-size: 2rem;
+    color: #5c80bc;
+    font-weight: bold;
+  }
+  
+  .money-raised ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .money-raised li {
+    background: #f6f9fc;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  

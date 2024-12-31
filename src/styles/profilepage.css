@@ -1,0 +1,66 @@
+/* Profile Page Container */
+.profile {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  .profile h2 {
+    font-size: 1.8rem;
+    color: #ff8ba7;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Profile Info */
+  .profile p {
+    font-size: 1rem;
+    color: #555;
+    margin: 15px 0;
+  }
+  
+  .profile p span {
+    font-weight: bold;
+    color: #ff8ba7;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .profile {
+      padding: 15px;
+      margin: 0 10px;
+    }
+  
+    .profile h2 {
+      font-size: 1.5rem;
+    }
+  
+    .profile p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile {
+      padding: 10px;
+      margin: 0 5px;
+    }
+  
+    .profile h2 {
+      font-size: 1.2rem;
+    }
+  
+    .profile p {
+      font-size: 0.8rem;
+    }
+  
+    .profile p span {
+      font-size: 0.9rem;
+    }
+  }
+  
